@@ -13,6 +13,8 @@ builder.Services.AddControllers();
 var app = builder.Build();
 
 app.UseCors("AllowAll"); // CORS aktiválása
+app.Urls.Add("http://localhost:8080");
+
 
 app.UseAuthorization();
 app.MapControllers();

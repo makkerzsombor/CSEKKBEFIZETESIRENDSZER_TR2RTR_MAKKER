@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "gt7y73JTvn9fft5cfbWDo/TviUq2refewWfjvuqz1IU=",
+  "Hash": "2+s8457ld69ctWbuObpRCH/uQ6HZJcVQzB6rRrllGGg=",
   "Source": "CsekkAPI",
   "BasePath": "_content/CsekkAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

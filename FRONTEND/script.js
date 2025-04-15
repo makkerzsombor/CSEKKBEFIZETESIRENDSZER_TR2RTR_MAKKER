@@ -12,7 +12,7 @@ document.getElementById('befizetesForm').addEventListener('submit', async functi
         return;
     }
 
-    const response = await fetch('http://localhost:5064/api/payment', {
+    const response = await fetch('http://localhost:8080/api/payment', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

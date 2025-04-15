@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CsekkAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee33a05ca307955b5369077eb96ace35b621c2c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+381cd2f33d7af9a6dc0cf0f7b7b60f42ea383ba7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CsekkAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CsekkAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
