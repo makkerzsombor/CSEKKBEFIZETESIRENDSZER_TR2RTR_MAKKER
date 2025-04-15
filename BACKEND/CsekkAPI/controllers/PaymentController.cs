@@ -8,8 +8,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CsekkAPI.controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class PaymentController: ControllerBase
-    {
+    {        
         private static List<PaymentModel> befizetesek = new();
 
         [HttpPost]
@@ -30,6 +32,14 @@ namespace CsekkAPI.controllers
             {
                 return BadRequest("Hibás szöveges összeg.");
             }
+        }
+
+        // GET kérés, ami visszaadja az összes befizetést
+        [HttpGet]
+        public IActionResult GetAllPayments()
+        {
+            // Visszaküldjük az összes befizetést
+            return Ok(befizetesek);
         }
     }
 }
