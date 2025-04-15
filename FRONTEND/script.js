@@ -29,4 +29,18 @@ document.getElementById('befizetesForm').addEventListener('submit', async functi
         uzenetDiv.innerHTML = `<div class="alert alert-danger">${hiba}</div>`;
         return;
     }
+
+    const adatok = await response.json();
+    uzenetDiv.innerHTML = `<div class="alert alert-success">Befizetés sikeres</div>`;
+    tabla.style.display = 'table';
+    tbody.innerHTML = "";
+
+    adatok.forEach((befizetes, index) => {
+        tbody.innerHTML += `
+            <tr>
+                <td>${index === adatok.length - 1 ? `<span class="badge bg-danger">${befizetes.nev}</span>` : befizetes.nev}</td>
+                <td>${befizetes.osszegSzam} Ft</td>
+                <td>${new Date(befizetes.datum).toLocaleDateString('hu-HU')}</td>
+            </tr>`;
+    });
 });
