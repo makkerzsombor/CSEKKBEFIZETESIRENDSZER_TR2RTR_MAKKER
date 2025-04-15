@@ -11,4 +11,14 @@ document.getElementById('befizetesForm').addEventListener('submit', async functi
         alert("Az összegnek 1 és 10 000 000 közé kell esnie!");
         return;
     }
+
+    const response = await fetch('http://localhost:5193/api/payment', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ nev, osszegSzam, osszegSzoveg, datum })
+    });
+
+    
 });
