@@ -1,0 +1,6 @@
+@CsekkAPI_HostAddress = http://localhost:5064
+
+GET {{CsekkAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
