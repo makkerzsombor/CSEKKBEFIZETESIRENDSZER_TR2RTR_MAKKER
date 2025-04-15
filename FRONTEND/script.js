@@ -20,5 +20,13 @@ document.getElementById('befizetesForm').addEventListener('submit', async functi
         body: JSON.stringify({ nev, osszegSzam, osszegSzoveg, datum })
     });
 
-    
+    const uzenetDiv = document.getElementById('uzenet');
+    const tabla = document.getElementById('befizetesTabla');
+    const tbody = tabla.querySelector('tbody');
+
+    if (!response.ok) {
+        const hiba = await response.text();
+        uzenetDiv.innerHTML = `<div class="alert alert-danger">${hiba}</div>`;
+        return;
+    }
 });
