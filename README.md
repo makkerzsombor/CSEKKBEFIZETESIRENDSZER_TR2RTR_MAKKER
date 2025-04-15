@@ -1,1 +1,6 @@
 # CSEKKBEFIZETESIRENDSZER_TR2RTR_MAKKER
+🏦 Csekkbefizetési rendszer
+Készítsen egy űrlapot, ahol meg lehet adni a következő paramétereket: befizető neve, befizetett összeg számmal, befizetett összeg szöveggel, dátum. A "befizetés" gombra kattintva az adatokat a backend API kapja meg majd dolgozza fel. Ellenőrizze, hogy a számként megadott érték egyezik-e a szövegben megadott értékkel. Ehhez készítsen saját algoritmust, ami egy magyar szöveget feldolgoz és előállítja a számszerű megfeleltetését. Például: tizenkétezer -> 12.000. Miután a szerver feldolgozta az adatot, ha hibát talált (pl. a két érték nem egyezik) adjon vissza "Hibás tranzakció" hibaüzenetet; míg sikeres feldolgozás esetén adja vissza az adatokat a kliens számára, és jelenítse meg egy táblázatban a képernyőn, amely tartalmazza az összes korábbi sikeres befizetést. Piros Bootstrap badge-vel emelje ki annak a nevét, akitől a legutolsó befizetés érkezett.
+
+Bemenetek: befizető neve, befizetett összeg számmal, befizetett összeg szöveggel, dátum
+Kimenetek: eddigi befizetések táblázatos megjelenítése
