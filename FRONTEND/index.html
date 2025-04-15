@@ -8,6 +8,31 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="mb-4">Csekkbefizetés</h1>
+
+        <form id="befizetesForm" class="mb-4">
+            <div class="mb-3">
+                <label for="nev" class="form-label">Név</label>
+                <input type="text" class="form-control" id="nev" required>
+            </div>
+            <div class="mb-3">
+                <label for="osszegSzam" class="form-label">Összeg (számmal)</label>
+                <input type="number" class="form-control" id="osszegSzam" required>
+            </div>
+            <div class="mb-3">
+                <label for="osszegSzoveg" class="form-label">Összeg (szöveggel)</label>
+                <input type="text" class="form-control" id="osszegSzoveg" required>
+                
+            </div>
+            <div class="mb-3">
+                <label for="datum" class="form-label">Dátum</label>
+                <input type="date" class="form-control" id="datum" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Befizetés</button>
+        </form>
+
+        <div id="uzenet"></div>        
+    </div>
 </body>
 </html>
