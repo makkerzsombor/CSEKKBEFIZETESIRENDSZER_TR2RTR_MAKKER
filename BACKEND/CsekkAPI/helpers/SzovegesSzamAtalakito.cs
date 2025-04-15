@@ -323,12 +323,34 @@ namespace CsekkAPI.helpers
         }
         private static string OsztottEgyesek(int szam)
         {
-            return "";
+            switch (szam)
+            {
+                case 1: return "egy";
+                case 2: return "kettő";
+                case 3: return "három";
+                case 4: return "négy";
+                case 5: return "öt";
+                case 6: return "hat";
+                case 7: return "hét";
+                case 8: return "nyolc";
+                case 9: return "kilenc";
+                default: return "";
+            }
         }
 
         private static string OsztottTizesek(int szam)
         {
-            return "";
+            switch (szam)
+            {
+                case 3: return "harminc";
+                case 4: return "negyven";
+                case 5: return "ötven";
+                case 6: return "hatvan";
+                case 7: return "hetven";
+                case 8: return "nyolcvan";
+                case 9: return "kilencven";
+                default: return "";
+            }
         }
         
     }
