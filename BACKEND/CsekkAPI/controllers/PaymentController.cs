@@ -23,14 +23,14 @@ namespace CsekkAPI.controllers
                 bool szovegekEgyeznek = SzovegesSzamAtalakito.Egyezik(input.OsszegSzam, input.OsszegSzoveg);
 
                 if (!szovegekEgyeznek)
-                    return BadRequest("Hibás szöveges összeg.");
+                    return BadRequest("Hibás tranzakció");
 
                 befizetesek.Add(input);
                 return Ok(befizetesek);
             }
             catch
             {
-                return BadRequest("Hibás szöveges összeg.");
+                return BadRequest("Hibás tranzakció");
             }
         }
 
